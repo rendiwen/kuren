@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <center><h4><img src="logounper.png" height="125" width="125"></h4></center>
+<body>
+<center><h2>FORM PMB</h2></center>
+<form action="simpandatasiswa.php" method="POST" autocomplete="on" >
+<fieldset>
+<legend>INPUT DATA SISWA</legend>
+<br>
+<h3>DATA SISWA</h3>
+<label for="NISN"> NISN :</label><br>
+<input type="number" id="nisn" name="nisn" placeholder="Masukan NISN Anda" required autofocus
+><br><br>
+<label for="nama"> Nama </label><br>
+<input type="text" id="nama" name="nama" placeholder="Masukan Nama Anda" required
+><br><br>
+<label for="tempat_lahir"> Tempat Lahir </label><br>
+<input type="text" id="tempat_lahir" name="tempat_lahir" maxlength="35" 
+placeholder="Masukan Tempat Lahir Anda"  required><br><br>
+<label for="tanggal_lahir"> Tanggal Lahir </label><br>
+<input type="date" id="tanggal_lahir" name="tanggal_lahir"
+placeholder="Masukan Tanggal Lahir Anda" required><br><br>
+
+<input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Laki-
+laki" required> Laki-laki
+
+<input type="radio" id="jenis_kelamin" name="jenis_kelamin"
+value="Perempuan" required> Perempuan
+<br><br>
+<label for="gol_darah" required> Gol darah:</label><br>
+<select id="gol_darah" name="gol_darah" required>
+<option value="" > Pilih Gol darah  </option>
+<option value="A"> A </option>
+<option value="B"> B </option>
+<option value="AB"> AB </option>
+<option value="O"> O </option>
+</select> <br><br>
+<input type="radio" id="Kewarganegaraan" name="Kewarganegaraan" value="WNI
+" required> WNI
+
+<input type="radio" id="Kewarganegaraan" name="Kewarganegaraan" value="WNA
+" required> WNA
+<br><br>
+<label for="alamat" required> Alamat</label><br>
+<textarea id="alamat" name="alamat" rows="4" cols="20" placeholder="Masukan
+Alamat">
+</textarea><br><br>
+<label for="rtrw"> RT/RW </label><br>
+<input type="text" id="rtrw" name="rtrw" placeholder="Masukan RT/RW Anda" required
+><br><br>
+<label for="keldesa"> Kel/Desa </label><br>
+<input type="text" id="keldesa" name="keldesa" placeholder="Masukan Kelurahan/Desa Anda" required><br><br>
+<label for="kecamatan"> Kecamatan </label><br>
+<input type="text" id="kecamatan" name="kecamatan" placeholder="Masukan Kecamatan Anda" required><br><br>
+<label for="provinsi"> Provinsi </label><br>
+<input type="text" id="provinsi" name="provinsi" placeholder="Masukan Provinsi Anda" required
+><br><br>
+<label for="Agama" required> Agama</label><br>
+<select id="Agama" name="Agama" required>
+<option value="" >Apa Agama Anda </option>
+<option value="Islam"> islam </option>
+<option value="Kristen"> kristen </option>
+<option value="Hindu"> Hindu</option>
+<option value="Budha"> Budha </option>
+</select><br><br>
+<label for="Program Studi Yang Diinginkan">Program Studi Yang Diinginkan </label><br>
+<input type="text" id="Program Studi Yang Diinginkan" name="Program Studi Yang Diinginkan" placeholder=" Masukan Program Studi Yang Diinginkan" required>
+<h3>KONTAK SISWA</h3>
+<label for="No.Telp"> No.Telepon </label><br>
+<input type="number" id="No.Telp" name="No.Telepon" placeholder="Masukan Nomor Telepon Anda" required>
+<br><br>
+<label for="e-mail"> e-mail </label><br>
+<input type="email" id="e-mail" name="e-mail" placeholder="Masukan e-mail Anda" required>
+<br><br>
+
+<h3>DATA ORANG TUA</h3>
+<label for="Nama Ayah"> Nama Ayah</label><br>
+<input type="text" id="Nama Ayah" name="Nama Ayah" placeholder="Nama Ayah" required>
+<br><br>
+<label for="Nama Ibu"> Nama Ibu</label><br>
+<input type="text" id="Nama Ibu" name="Nama Ibu" placeholder="Nama Ibu" required>
+<br><br>
+<label for="Nama Wali"> Nama Wali</label><br>
+<input type="text" id="Nama Wali" name="Nama Wali" placeholder="Nama Wali" required>
+<br><br>
+<label for="statuspernikahan"> Status Pernikahan </label><br>
+<input type="text" id="statuspernikahan" name="statuspernikahan" placeholder="Masukan Status Pernikahan Anda" required
+><br><br>
+<label for="pekerjaan"> Pekerjaan:</label><br>
+<input list="pekerjaan" name="pekerjaan" required placeholder="Masukan Pekerjaan">
+<datalist id="pekerjaan">
+  <option value="TNI">TNI</option>
+  <option value="POLRI">POLRI</option>
+  <option value="PNS">PNS</option>
+  <option value="Wiraswasta">Wiraswasta</option>
+  <option value="Guru">Guru</option>
+  <option value="Dosen">Dosen</option>
+  <option value="Buruh">Buruh</option>
+  <option value="Petani">Petani</option>
+  <option value="Lainnya">Lainnya</option>
+</datalist>
+<br><br>
+<input type="radio" id="Kewarganegaraan" name="Kewarganegaraan" value="WNI
+" required> WNI
+
+<input type="radio" id="Kewarganegaraan" name="Kewarganegaraan" value="WNA
+" required> WNA
+<br><br>
+<label for="alamat" required> Alamat</label><br>
+<textarea id="alamat" name="alamat" rows="4" cols="20" placeholder="Masukan
+Alamat">
+</textarea><br><br>
+<label for="input_foto"> Input Foto:</label><br>
+<input type="file" id="input_foto" name="input_foto" accept="image/*" required>
+<br>
+<img id="preview" src="" alt="Preview Foto" style="max-width: 200px; max-height: 200px; display: none;">
+<br>
+<label for="IJAZAH"> IJAZAH:</label><br>
+<input type="file" id="IJAZAH "name="IJAZAH" accept="image/*" required>
+<br><br>
+<center><input type="submit" value="Kirim Pendaftaran"></center>
+</fieldset>
+</form>
+
+</body>
+</html>
